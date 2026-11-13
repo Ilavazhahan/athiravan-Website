@@ -78,3 +78,96 @@ Created by the Contact form. Visitors can create but not read; only admins can r
 | message     | text      |                                  |
 | createdAt   | timestamp | server timestamp                 |
 | handled     | boolean   | false                            |
+
+## Example documents
+
+### apps / cluckscale
+
+```json
+{
+  "name_en": "CluckScale",
+  "name_ta": "(Tamil name)",
+  "description_en": "Poultry weighing and billing app",
+  "description_ta": "(Tamil text)",
+  "category": "poultry",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=your.package.name",
+  "iconUrl": "https://example.com/cluckscale-icon.png",
+  "screenshots": [
+    "https://example.com/shot1.png",
+    "https://example.com/shot2.png"
+  ],
+  "published": true,
+  "displayOrder": 1
+}
+```
+
+### products / atway-ws100
+
+```json
+{
+  "brand": "Atway",
+  "name_en": "WS-100 Platform Scale",
+  "name_ta": "(Tamil name)",
+  "description_en": "Heavy duty platform scale",
+  "description_ta": "(Tamil text)",
+  "category": "platform",
+  "capacity": "300 kg",
+  "image": "https://placehold.co/600x450?text=Atway+WS-100",
+  "images": {
+    "front": "atway-ws100_front",
+    "side": "atway-ws100_side",
+    "back": "atway-ws100_back"
+  },
+  "displayOrder": 1
+}
+```
+
+### showrooms / madurai
+
+```json
+{
+  "city_en": "Madurai",
+  "city_ta": "மதுரை",
+  "address_en": "(street address, Madurai)",
+  "address_ta": "(Tamil address)",
+  "phone": "+91 98765 43210",
+  "hours_en": "Mon to Sat, 9:30 am to 7 pm",
+  "hours_ta": "(Tamil hours)",
+  "mapUrl": "https://maps.google.com/?q=...",
+  "photo": "https://example.com/madurai-showroom.jpg",
+  "displayOrder": 1
+}
+```
+
+### gallery / factory-welding-01
+
+```json
+{
+  "image": "factory-welding-01",
+  "caption_en": "Welding a platform scale frame",
+  "caption_ta": "(Tamil caption)",
+  "section": "factory",
+  "displayOrder": 1
+}
+```
+
+### enquiries / (random ID, created by the Contact form)
+
+```json
+{
+  "name": "Ravi Kumar",
+  "phone": "9876543210",
+  "email": "",
+  "productId": "atway-ws100",
+  "productName": "WS-100 Platform Scale",
+  "message": "Please send the price for 300 kg.",
+  "createdAt": "(server timestamp)",
+  "handled": false
+}
+```
+
+where should I put this?
+
+```
+
+```
