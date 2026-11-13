@@ -108,3 +108,26 @@ Full rules are in [CONTRIBUTING.md](CONTRIBUTING.md).
 | Changes don't show                | Save the file, then hard-refresh the browser (Ctrl + Shift + R)                           |
 
 Stuck for more than 30 minutes? Ask in the group with a screenshot of the error.
+
+## Setup
+
+1. Clone the repo and open the project folder (the one that contains `package.json`):
+   ```bash
+   git clone https://github.com/Ilavazhahan/athiravan-Website.git
+   cd athiravan-Website
+   ```
+2. Copy the example env file to a real one:
+   - Windows (PowerShell): `copy .env.example .env`
+   - Mac/Linux: `cp .env.example .env`
+3. Open `.env` and fill in the Firebase values. Ask Ila for them. Never commit `.env` or share the values publicly.
+4. Install the packages:
+   ```bash
+   npm install
+   ```
+5. Start the site:
+   ```bash
+   npm run dev
+   ```
+   Open the address it prints (usually http://localhost:5173).
+
+If you change `.env`, stop the server (Ctrl+C) and run `npm run dev` again.
