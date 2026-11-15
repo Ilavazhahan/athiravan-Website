@@ -1,0 +1,28 @@
+.showrooms__list {
+  display: flex;
+  flex-direction: column;   /* mobile first: stacked */
+  gap: 24px;
+}
+
+.showroom-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.showroom-card__photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;        /* keeps photos from stretching */
+}
+
+.showroom-card__body { padding: 16px; }
+
+.showroom-card__actions { display: flex; gap: 12px; margin-top: 12px; }
+
+@media (min-width: 768px) {
+  .showrooms__list {
+    flex-direction: row;    /* side by side on wide screens */
+  }
+}
