@@ -1,4 +1,18 @@
-const staticShowrooms = [
+export interface Showroom {
+  id: number;
+  city_en: string;
+  city_ta: string;
+  address_en: string;
+  address_ta: string;
+  phone: string;
+  hours_en: string;
+  hours_ta: string;
+  mapUrl: string;
+  photo: string;
+  displayOrder: number;
+}
+
+const staticShowrooms: Showroom[] = [
   {
     id: 1,
     city_en: "Madurai",
