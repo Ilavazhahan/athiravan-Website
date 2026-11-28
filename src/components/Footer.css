@@ -1,0 +1,134 @@
+
+/* Main footer */
+.site-footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 55px 6% 0;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+/* Four-column layout */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+
+/* Individual columns */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  text-align: left;
+}
+
+.footer-column h2 {
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 25px;
+  margin: 0;
+}
+
+.footer-column h3 {
+  color: var(--orange);
+  font-family: var(--font-body);
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Tamil tagline */
+.footer-column .tamil-tagline {
+  font-family: var(--font-tamil);
+  color: var(--orange);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-description {
+  max-width: 260px;
+  color: var(--muted) !important;
+}
+
+/* Footer links */
+.footer-column a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: var(--orange);
+}
+
+/* Quote button */
+.footer-quote-button {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--white) !important;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 8px !important;
+  transition: background 0.2s ease;
+}
+
+.footer-quote-button:hover {
+  background: var(--white);
+  color: var(--black) !important;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-bottom p {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 40px 7% 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
